@@ -1,6 +1,7 @@
 package com.example.home
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -28,5 +29,22 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.navigation_home -> showBottomNav()
+                R.id.navigation_dashboard -> showBottomNav()
+                R.id.navigation_notifications -> showBottomNav()
+                else -> hideBottomNav()
+            }
+        }
+    }
+
+    private fun showBottomNav() {
+        binding.navView.visibility = View.VISIBLE
+    }
+
+    private fun hideBottomNav() {
+        binding.navView.visibility = View.GONE
     }
 }

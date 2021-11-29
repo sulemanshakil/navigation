@@ -26,10 +26,11 @@ class SettingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.result.setOnClickListener {
-            findNavController().previousBackStackEntry?.savedStateHandle?.set("key", "Result from setting screen")
-        }
+        binding.result.setOnClickListener { setResult() }
+    }
 
+    private fun setResult() {
+        findNavController().previousBackStackEntry?.savedStateHandle?.set("key", binding.editText.text.toString())
     }
 
     override fun onDestroyView() {
