@@ -55,7 +55,7 @@ class DashboardFragment : Fragment() {
     }
 
     private fun setResult(result: String) {
-        (binding.resultFromSettings as TextView).text = result
+        binding.resultFromSettings.text = result
     }
 
     private fun navigateToSettings() {
