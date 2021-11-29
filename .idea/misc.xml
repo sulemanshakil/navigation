@@ -18,6 +18,8 @@
         <entry key="home/src/main/res/layout/fragment_notifications.xml" value="0.21197916666666666" />
         <entry key="home/src/main/res/layout/main_activity.xml" value="0.21197916666666666" />
         <entry key="home/src/main/res/menu/bottom_nav_menu.xml" value="0.21197916666666666" />
+        <entry key="settings/src/main/res/layout/fragment_setting.xml" value="0.21197916666666666" />
+        <entry key="settings/src/main/res/layout/fragment_settings.xml" value="0.21197916666666666" />
       </map>
     </option>
   </component>

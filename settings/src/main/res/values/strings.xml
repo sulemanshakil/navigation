@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_screen_1">setting screen 1</string>
+    <string name="setting_screen_2">setting screen 2</string>
+    <string name="next">Next</string>
+</resources>

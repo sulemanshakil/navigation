@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "Navigation"
 include ':app'
 include ':home'
+include ':settings'
